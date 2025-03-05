@@ -1,13 +1,21 @@
-import { ScreenContent } from 'components/ScreenContent';
-import { StatusBar } from 'expo-status-bar';
+import { NavigationContainer, ThemeContext } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { StatusBar } from 'react-native'
+import HomeScreen from "screens/home-screen";
+import WordpresNewsScreen from "screens/wordpress-news-screen";
+import { ThemeProvider } from "context/theme-context";
 
-import './global.css';
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <>
-      <ScreenContent title="Home" path="App.tsx" />
-      <StatusBar style="auto" />
-    </>
-  );
+    <ThemeProvider>
+      <NavigationContainer>
+        <StatusBar />
+      </NavigationContainer>
+    </ThemeProvider>
+  )
 }
+
+
+
