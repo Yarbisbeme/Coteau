@@ -38,7 +38,7 @@ const ScreenContainer: React.FC<ScreenContainerProps> = ({
   )
 
   return (
-    <SafeAreaView className={`flex-1 ${isDarkMode ? "bg-background-dark" : "bg-background"}`}>
+    <SafeAreaView className={`flex-1 ${isDarkMode ? "bg-gray-900" : "bg-background"}`}>
       <StatusBar
         barStyle={isDarkMode ? "light-content" : "dark-content"}
         backgroundColor={isDarkMode ? "#111827" : "#ffffff"}

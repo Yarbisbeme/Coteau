@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "my-expo-app",
-    "slug": "my-expo-app",
+    "name": "Coteau",
+    "slug": "Coteau",
     "version": "1.0.0",
 
     "web": {
-      "favicon": "./assets/favicon.png",
+      "favicon": "./assets/img/yarbis.jpg",
       "bundler": "metro"
     },
 
@@ -16,12 +16,12 @@
     "plugins": [],
 
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/img/yarbis.jpg",
 
     "userInterfaceStyle": "light",
 
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/img/yarbis.jpg",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -31,7 +31,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/img/yarbis.jpg",
         "backgroundColor": "#ffffff"
       }
     }
