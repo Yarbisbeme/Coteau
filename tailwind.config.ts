@@ -65,6 +65,9 @@ module.exports = {
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
       },
+      fonFamily: {
+        sans: ["sans-serif", "system"]
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],

@@ -41,11 +41,11 @@ const HomeScreen = () => {
         ]}
       >
         <View
-          className={`w-[150px] h-[150px] rounded-full ${isDarkMode ? "bg-primary-dark/20" : "bg-primary/20"} justify-center items-center mb-4 shadow-md`}
+          className={`w-[150px] h-[150px] rounded-full ${isDarkMode ? "bg-primary-dark/20" : "bg-primary-dark"} justify-center items-center mb-4 shadow-md`}
         >
           <Image
-            source={{ uri: "https://cdn-icons-png.flaticon.com/512/1057/1057072.png" }}
-            className="w-[100px] h-[100px]"
+            source={require("../assets/img/yarbis.jpg")}
+            className="w-[100px] h-[100px] rounded-full"
           />
         </View>
         <Text className={`text-2xl font-bold ${isDarkMode ? "text-text-dark" : "text-text"} text-center`}>
@@ -62,19 +62,19 @@ const HomeScreen = () => {
         <ToolCard
           title="Gender Predictor"
           icon="user"
-          onPress={() => navigation.navigate("GenderPredictor" as never)}
+          onPress={() => navigation.navigate("Gender" as never)}
           delay={100}
         />
         <ToolCard
           title="Age Predictor"
           icon="calendar"
-          onPress={() => navigation.navigate("AgePredictor" as never)}
+          onPress={() => navigation.navigate("Age" as never)}
           delay={200}
         />
         <ToolCard
           title="Universities Finder"
           icon="book"
-          onPress={() => navigation.navigate("Universities" as never)}
+          onPress={() => navigation.navigate("University" as never)}
           delay={300}
         />
         <ToolCard
@@ -87,7 +87,7 @@ const HomeScreen = () => {
         <ToolCard
           title="WordPress News"
           icon="rss"
-          onPress={() => navigation.navigate("WordpressNews" as never)}
+          onPress={() => navigation.navigate("News" as never)}
           delay={600}
         />
         <ToolCard title="About" icon="info" onPress={() => navigation.navigate("About" as never)} delay={700} />
