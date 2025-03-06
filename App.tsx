@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { StatusBar } from 'react-native'
 import { ThemeProvider } from "context/theme-context";
 import Screens from './screens/_index'; 
+import 'global.css'
 
 const Stack = createNativeStackNavigator();
 
