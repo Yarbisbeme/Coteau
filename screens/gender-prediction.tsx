@@ -1,5 +1,5 @@
 
-import { View, Text, Animated } from 'react-native'
+import { View, Text, Animated, Easing } from 'react-native'
 import React, { useState } from 'react'
 import { useTheme } from 'context/theme-context'
 
@@ -44,10 +44,31 @@ export const GenderPrediction: React.FC<gendertype> = () => {
       if (data.gender) {
         setGender(data.gender);
         setProbability(data.probability);
+
+        scaleAnime.setValue(0);
+        opacityAnim.setValue(0);
+
+        Animated.parallel([
+          Animated.timing(scaleAnime, {
+            toValue: 1,
+            useNativeDriver: true,
+            duration: 500,
+            easing: Easing.in(Easing.ease),
+          }),
+          Animated.timing(opacityAnim, {
+            useNativeDriver: true, 
+            duration: 500,
+            toValue: 1,
+          })
+        ]).start()
+      }else {
+        setError("Could not predict gender fpor this name")
       }
-
     } catch (error) {
-
+      setError("An error ocurred, please try again")
+      console.log(error)
+    } finally {
+      setLoading(false);
     }
   }
 
