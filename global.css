@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --border: 220 13% 91%; /* Color de los bordes */
+    --input: 220 13% 91%; /* Color de los inputs */
+    --ring: 240 5% 64%; /* Color del anillo de enfoque */
+    --background: 220 14% 96%; /* Color del fondo claro */
+    --foreground: 222 47% 11%; /* Color de primer plano */
+  
+    --primary: 242 84% 77%; /* Azul claro */
+    --primary-foreground: 0 0% 100%; /* Blanco */
+    
+    --secondary: 350 89% 69%; /* Rosa */
+    --secondary-foreground: 0 0% 100%; /* Blanco */
+  
+    --destructive: 0 84% 60%; /* Rojo */
+    --destructive-foreground: 0 0% 100%; /* Blanco */
+  
+    --muted: 220 10% 80%; /* Gris tenue */
+    --muted-foreground: 220 10% 40%; /* Gris oscuro */
+  
+    --accent: 160 67% 52%; /* Verde */
+    --accent-foreground: 0 0% 100%; /* Blanco */
+  
+    --popover: 0 0% 100%; /* Blanco */
+    --popover-foreground: 222 47% 11%; /* Gris oscuro */
+  
+    --card: 220 14% 96%; /* Gris claro */
+    --card-foreground: 222 47% 11%; /* Gris oscuro */
+  
+    --text: 222 47% 11%; /* Texto oscuro */
+    --text-dark: 240 14% 98%; /* Texto claro */
+  
+    --notification: 0 84% 60%; /* Rojo para notificaciones */
+    --notification-dark: 0 78% 70%; /* Rojo claro */
+  }
+  
+  /* Modo oscuro */
+  .dark {
+    --background: 222 47% 11%; /* Fondo oscuro */
+    --foreground: 220 14% 96%; /* Texto claro */
+  
+    --primary: 242 84% 69%; /* Azul más oscuro */
+    --secondary: 350 89% 60%; /* Rosa más oscuro */
+    --accent: 160 67% 45%; /* Verde más oscuro */
+  
+    --card: 222 47% 15%; /* Tarjetas más oscuras */
+    --text: 240 14% 98%; /* Texto claro */
+    --notification: 0 78% 70%; /* Rojo más claro */
+  }
+  
