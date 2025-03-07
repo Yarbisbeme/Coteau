@@ -25,7 +25,7 @@ export default function App() {
           <Stack.Screen name="University" component={Screens.UniversitiesScreen}/>
           <Stack.Screen name="News" component={Screens.WordpresNewsScreen}/>
           <Stack.Screen name="Age" component={Screens.AgePredictorScreen}/>
-          <Stack.Screen name="Gender" component={Screens.GenderPrediction}/>
+          <Stack.Screen name="Gender" component={Screens.GenderScreen}/>
           <Stack.Screen name="Pokemon" component={Screens.PokemonScreen}/>
         </Stack.Navigator>
       </NavigationContainer>

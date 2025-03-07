@@ -2,7 +2,7 @@ import type React from "react"
 import type { ReactNode } from "react"
 import { View, SafeAreaView, StatusBar, ScrollView, KeyboardAvoidingView, Platform } from "react-native"
 import { useTheme } from "../context/theme-context"
-import { Header } from "./header"
+import {Header} from "./header"
 
 type ScreenContainerProps = {
   children: ReactNode
