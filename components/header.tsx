@@ -11,10 +11,10 @@ type headerProps = {
 export const Header: React.FC<headerProps> = ({title, showBackButton = true}) => {
     const navigation = useNavigation();
     const { isDarkMode, toggleSide } = useTheme();
-
+    
     return (
         <View
-            className={`flex-row items-center px-4 py-3 border-b ${isDarkMode ? "border-border-darK" : "border-border"}`}
+            className={`flex-row items-center px-4 py-3 border-b ${isDarkMode ? "border-border-dark" : "border-border"}`}
         >
             {showBackButton ? (
                 <TouchableOpacity
